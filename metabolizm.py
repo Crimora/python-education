@@ -2,10 +2,10 @@ def get_metabolizm(gender: int,
                    mass: float,
                    height: float,
                    age: float):
-    if gender is True:
+    if gender == 1:
         metabolizm = 66.5 + (13.75 * mass) + (5.003 * height) - (6.775 * age)
     else:
-        metabolizm = 66 + (9.55 * 80) + (1.8 * 163) - (4.7 * 23)
+        metabolizm = 66 + (9.55 * mass) + (1.8 * height) - (4.7 * age)
     return metabolizm
 
 
